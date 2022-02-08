@@ -133,14 +133,16 @@ const AdminLayout = () => {
                 </div>
             </Drawer>
             <main
-                className={`main_section p-0 w-100 ${clsx(classes.content, {
+                className={`p-0 w-100 ${clsx(classes.content, {
                     [classes.contentShift]: isSidebarOpen && !smallScreen,
                 })}`}
             >
                 <AdminTopNav />
-                <LoadingSuspense>
-                    {renderRoutes(rootRouting)}
-                </LoadingSuspense>
+                <div className="main_section">
+                    <LoadingSuspense>
+                        {renderRoutes(rootRouting)}
+                    </LoadingSuspense>
+                </div>
             </main>
         </div>
     );
