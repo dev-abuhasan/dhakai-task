@@ -1,5 +1,87 @@
-#mainTopNavbar{
-    background-color: #01896a;
-    color: #FFF;
+#mainTopNavbar {
+    background-color: #009d79;
+    color: #fff;
     height: 80px;
+
+    .buttonGroup {
+        width: 170px;
+        height: 40px;
+        background-color: #01896a;
+        border-radius: 20px;
+        box-shadow: 0 2px 0 0 #009d79, inset 0 2px 0 0 #006c53;
+        span {
+            display: block;
+            color: #ddd;
+        }
+        .explore {
+            margin-left: 3px;
+            margin-top: -2px;
+            height: 34px;
+            border-radius: 17px;
+            box-shadow: 0 2px 0 0 #006c53, inset 0 2px 0 0 #009d79;
+            background-color: #009372;
+        }
+    }
+    #navSrcBar {
+        font-size: 14px;
+        font-weight: 500;
+        input {
+            width: 410px;
+            background-color: #fff;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            padding-left: 40px;
+            :focus {
+                border: none;
+            }
+            &::placeholder {
+                color: rgb(187, 186, 186);
+            }
+        }
+        span {
+            display: block;
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            padding-top: 10px;
+            padding-left: 5px;
+            text-align: center;
+            top: 20px;
+            color: rgb(187, 186, 186);
+            // background-color: red;
+        }
+    }
+    .navRightIcons {
+        div {
+            position: relative;
+            background-color: #01896a;
+            height: 42px;
+            width: 42px;
+            margin: 0 5px;
+            text-align: center;
+            border-radius: 100%;
+
+            span {
+                font-size: 20px;
+            }
+
+            .common {
+                top: -5px;
+                right: -5px;
+                font-size: 14px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-color: #ac0000;
+                border-radius: 100%;
+                color: #FFF;
+            }
+        }
+        .user {
+            background-color: #fff;
+            color: #006c53;
+        }
+    }
 }
