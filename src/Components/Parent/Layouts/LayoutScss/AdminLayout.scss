@@ -1,0 +1,82 @@
+@import "../../../../services/scss/main.scss";
+
+.main_section{
+    padding-left: 50px!important;
+}
+#sideNavDrawer {
+    .drawerDividerCustom {
+        height: 1.5px;
+    }
+    .navBottom {
+        padding-top: 150px;
+        text-align: center;
+        span{
+            font-size: 30px;
+        }
+    }
+    .NavLogoParent {
+        img {
+            width: 176px;
+        }
+    }
+
+    .MuiDrawer-paperAnchorDockedLeft {
+        border-right: 0 0 0px solid #000;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background-color: $MainText;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $MainLightGreen;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: $MainLightRed;
+    }
+}
+
+#mainTopNavbar {
+    width: 100%;
+
+    .TopNavImgParent {
+        width: 65px;
+        border: none !important;
+        background-color: transparent !important;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .dropdown-toggle:focus {
+        box-shadow: 0 0 3px rgb(81, 228, 155) !important;
+        transition: all 0.3s;
+    }
+}
+
+.SideNavLink {
+    color: $MainText !important;
+    &:hover {
+        background-color: transparent !important;
+    }
+}
+
+.sideNavPadding {
+    padding: 10px 0;
+    span {
+        font-size: 30px;
+    }
+}
+
+.activeNavBorder {
+    transition: all 0.1s;
+    // border-left: 3px solid $MainDarkGreen;
+    a {
+        span {
+            color: $MainDarkGreen;
+        }
+    }
+}
+

@@ -1,0 +1,96 @@
+#loadingParent {
+    background-color: rgba(3, 5, 20, 0.664);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .loading {
+        z-index: 2;
+        box-shadow: 0px 0px 10px #aaaaaa;
+        text-transform: uppercase;
+        border-radius: 5px;
+        width: 250px;
+        height: 150px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        // text-shadow: 0 0 2px #3d3d3d;
+        // color: ;
+        background: url("https://i.ibb.co/Bf77VDg/a2dc9668f2cf170fe3efeb263128b0e7.gif") no-repeat;
+        background-size: 400px;
+        background-position: center;
+
+        font-weight: 500;
+        font-size: 18px;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+
+    .loading span {
+        position: relative;
+        z-index: 999;
+    }
+    .loading:before {
+        content: "";
+        background: #61bdb52c;
+        width: 210px;
+        height: 36px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        animation: 2s loadingBefore infinite ease-in-out;
+    }
+
+    @keyframes loadingBefore {
+        0% {
+            transform: translateX(-14px);
+        }
+        50% {
+            transform: translateX(14px);
+        }
+        100% {
+            transform: translateX(-14px);
+        }
+    }
+
+    .loading:after {
+        content: "";
+        background: #ff3600;
+        width: 14px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0.5;
+
+        animation: 2s loadingAfter infinite ease-in-out;
+    }
+
+    @keyframes loadingAfter {
+        0% {
+            transform: translateX(-70px);
+        }
+        50% {
+            transform: translateX(70px);
+        }
+        100% {
+            transform: translateX(-70px);
+        }
+    }
+}
