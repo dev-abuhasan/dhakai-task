@@ -1,0 +1,52 @@
+#main_product_all {
+    .custom_card {
+        border-radius: 8px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+
+        .banner_parent {
+            position: relative;
+            img {
+                border-radius: 10px;
+            }
+            .logo {
+                // position: absolute;
+                // top: 85px;
+                // left: 15px;
+                margin-top: -55px;
+                padding-left: 15px;
+            }
+        }
+        .custom_card_details {
+            font-size: 14px;
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                color: #2a2a2e;
+            }
+            .address_quantity {
+                color: #63636a;
+                // .address {
+                // }
+                .quantity {
+                    color: #01896a;
+                }
+            }
+            .product_group {
+                color: #63636a;
+                // span {
+                // }
+            }
+        }
+        .view_details {
+            width: 120px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #d1ffd0;
+            font-size: 14px;
+            text-align: center;
+            color: #01896a;
+            font-weight: bolder;
+        }
+    }
+}

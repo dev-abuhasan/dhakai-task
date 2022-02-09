@@ -1,8 +1,8 @@
 @import "../../../../services/scss/main.scss";
 
-.main_section {
-    padding-left: 50px !important;
-}
+// .main_section {
+//     padding-left: 50px !important;
+// }
 #sideNavDrawer {
     .drawerDividerCustom {
         height: 1.5px;
@@ -73,5 +73,12 @@
         span {
             color: $MainDarkGreen;
         }
+    }
+}
+
+
+#mainLayout{
+    .leftSideNav{
+        width: 70px;
     }
 }

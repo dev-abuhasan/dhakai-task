@@ -10,7 +10,7 @@ const userInfoFromStorage = localStorage.getItem('admin_loginInfo')
 
 const middleware = [thunk];
 const initial = {
-    userLogin: { user: userInfoFromStorage },
+    userLogin: { user: userInfoFromStorage }
 };
 
 export const store = createStore(
